@@ -12,6 +12,9 @@
     color: #727272;
     font-weight: 500;
 }
+main{
+    margin: 0 15vw;
+}
 
 /* navbar */
 header {
@@ -58,11 +61,11 @@ nav ul li:hover {
 }
 
 .description {
-    color: #727272;
-    font-size: 1rem;
-    font-weight: 400;
     margin: 1rem auto;
     width: 50%;
+    color: #727272;
+    font-size: .9rem;
+    font-weight: 300;
 }
 
 .btn-primary {
@@ -72,6 +75,9 @@ nav ul li:hover {
     padding: .8rem 1.8rem;
     border: 0;
     margin: 1rem 0;
+}
+.btn-primary:hover{
+    background: #727272;
 }
 
 .banner-content {
@@ -86,6 +92,31 @@ nav ul li:hover {
     padding-bottom: 2rem;
 }
 /* quick list starts */
+.quick-list{
+    display: flex;
+    align-items: center;
+    height: 80vh;
+    gap: 5rem;
+}
+.team-title{
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+.team-description{
+    color: #727272;
+    font-size: .9rem;
+    font-weight: 300;
+    width: 70%;
+}
+
+.team-img-container{
+    display: grid;
+    gap: 1.2rem;
+    grid-template-columns: repeat(2, 1fr);
+}
+.team-img-container img{
+    width: 15vw;
+}
 
 /* responsive styles */
 /* tablet devices */
@@ -107,9 +138,31 @@ nav ul li:hover {
     }
 
     .description {
-        margin: 1rem auto 0;
+        margin:0 auto;
         width: 80%;
     }
+    .quick-list{
+        flex-direction: column-reverse;
+        gap: 2rem;
+        height: 45rem;
+    }
+    .team-container{
+        text-align: center;
+        padding-top: 1rem;
+    }
+    .team-description{
+        width: 100%;
+    }
+    .team-img-container{
+        gap: .5rem;
+        margin-bottom: 2rem;
+    }
+    .team-img-container img{
+        width: 20vw;
+    }
+    
+
+
 
 }
 
@@ -134,5 +187,24 @@ nav ul li:hover {
     .description {
         font-size: 1rem;
         width: 80%;
+    }
+    .quick-list{
+        flex-direction: column-reverse;
+        gap: 2rem;
+        height: 40rem;
+    }
+    .team-container{
+        text-align: center;
+        padding-top: 2rem;
+    }
+    .team-description{
+        width: 100%;
+    }
+    .team-img-container{
+        gap: .5rem;
+        margin-bottom: 2rem;
+    }
+    .team-img-container img{
+        width: 25vw;
     }
 }
